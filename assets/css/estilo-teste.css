@@ -1,0 +1,172 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  /* MOBILE ATÉ 766PX */
+  @media (max-width: 766px) {
+  
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #020224;
+      height: 9vh;
+    }
+  
+    main {
+      background: url(/assets/img/esfinge.jpg) no-repeat center center;
+      background-size: cover;
+      height: 100vh; /* Ajustado para caber melhor na tela */
+    }
+  
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      background: #23232e;
+      justify-content: space-around;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      height: 50vh;
+      width: 45vw;
+    }
+  
+    .nav-list.active {
+      transform: translateX(0);
+    }
+  
+    .mobile-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    img {
+      height: 27vh;
+      width: 45%;
+      margin-top: 60px;
+      margin-left: -10px;
+    }
+  
+    .section-1-esfinge {
+      display: flex;
+      background: url("/assets/img/esfinge.jpg") no-repeat center center;
+      height: 750px;
+      width: 100%;
+    }
+  
+    .section-2-capitolio {
+      display: flex;
+      background: url("/assets/img/identidadesb.jpg") no-repeat center center;
+      background-size: cover;
+      height: 920px;
+      cursor: pointer;
+    }
+  
+    footer {
+      width: 100vw;
+      height: auto;
+    }
+  
+    ul.redes-sociais img,
+    ul.redes-sociais-2 img {
+      width: 60px;
+      height: 60px;
+      margin: 20px;
+    }
+  }
+  
+  /* DESKTOP TELA MENOR OU TABLET - 767PX */
+  @media (min-width: 767px) {
+  
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 9vh;
+    }
+  
+    .nav-list {
+      display: flex;
+      list-style: none;
+    }
+  
+    .nav-list li {
+      margin-right: 60px;
+      font-size: 2.2vh;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    main {
+      background: url(/assets/img/esfinge.jpg) no-repeat center center;
+      height: 2200px;
+    }
+  
+    .section-1-esfinge {
+      height: 104vh;
+      margin-bottom: -33px;
+    }
+  
+    .section-2-capitolio {
+      width: 100vw;
+      height: 290vh;
+    }
+  
+    .section-2-capitolio h1 {
+      font-size: 64px;
+      margin-left: 27px;
+      margin-top: 305px;
+    }
+  
+    footer {
+      margin-top: 1580px;
+      height: auto;
+    }
+  }
+  
+  /* DESKTOP TAMANHO MÉDIO 1024PX */
+  @media (min-width: 1024px) {
+  
+    .section-1-esfinge {
+      height: 150vh;
+    }
+  
+    .section-2-capitolio {
+      width: 142vw;
+      height: 322vh;
+      margin-top: 30px;
+    }
+  
+    .section-2-capitolio h1 {
+      font-size: 88px;
+      margin-left: 55px;
+      margin-top: 485px;
+    }
+  
+    footer {
+      margin-top: 1500px;
+      height: auto;
+    }
+  }
+  
